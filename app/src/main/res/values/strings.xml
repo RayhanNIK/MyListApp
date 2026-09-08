@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">MyListApp</string>
+    <string name="app_name">Kuliner Jogja</string>
+    <string name="title_menu">Menu Utama</string>
+    <string name="btn_list_food">Lihat Kuliner Jogja</string>
+    <string name="title_list_food">Daftar Kuliner Jogja</string>
+
+    <!-- Data Kuliner Jogja -->
+    <string name="food_1_name">Gudeg</string>
+    <string name="food_1_desc">blablabla</string>
+
+    <string name="food_2_name">Gudeg</string>
+    <string name="food_2_desc">blablabla</string>
+
+    <string name="food_3_name">Gudeg</string>
+    <string name="food_3_desc">blablabla</string>
+
+
 </resources>
