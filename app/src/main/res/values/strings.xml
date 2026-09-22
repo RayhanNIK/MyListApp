@@ -14,5 +14,25 @@
     <string name="food_3_name">Gudeg</string>
     <string name="food_3_desc">blablabla</string>
 
+    <string name="scholarship_name">Scholarship Name</string>
+    <string name="description">Description</string>
+    <string-array name="data_name">
+        <item>ASEAN Undergraduate Scholarship</item>
+        <item>UBC Scholarship</item>
+        <item>UM NL Global Studies Scholarship</item>
+        <item>Study In Saudi</item>
+        <item>Garuda Scholarship</item>
+        <item>USC Scholarship</item>
+        <item>HKUST Scholarship</item>
+    </string-array>
+    <string-array name="data_description">
+        <item>The ASEAN Undergraduate Scholarship (AUS) is a merit-based financial award funded by Singaporean universities (such as NUS, NTU, SMU, and SIT) to support outstanding high school graduates from ASEAN member countries (excluding Singapore) pursuing full-time undergraduate degrees. </item>
+        <item>The University of British Columbia (UBC) International Scholarships is a financial awards offered to incoming international students, broadly categorized into merit-based entrance awards and need-plus-merit awards</item>
+        <item>The UM NL High Potential Scholarship (formerly the UM Holland High Potential Scholarship) is a fully funded merit award offered by Maastricht University (UM) in collaboration with the Dutch Ministry of Education. It supports highly talented students from outside the EU/EEA pursuing select Master\'s degree programs at UM. </item>
+        <item>Study in Saudi is a fully funded government program administered by the Saudi Ministry of Education to attract top international talent to public universities across the Kingdom</item>
+        <item>Beasiswa Garuda (specifically Beasiswa Garuda Sarjana) is a prestigious, fully funded undergraduate scholarship program created through a collaboration between the Ministry of Higher Education, Science, and Technology (Kemdiktisaintek) and the Education Fund Management Institution (LPDP).</item>
+        <item>USC awards scholarships to help undergraduate students pay for their education. These funds come from a variety of university, federal, state and private sources. Unlike loans, however, they do not have to be repaid.</item>
+        <item>The HKUST Admissions Scholarships are merit-based financial awards provided by the Hong Kong University of Science and Technology to outstanding local and international undergraduate applicants.</item>
+    </string-array>
 
 </resources>
