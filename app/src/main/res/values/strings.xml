@@ -21,5 +21,14 @@
         <item>USC awards scholarships to help undergraduate students pay for their education. These funds come from a variety of university, federal, state and private sources. Unlike loans, however, they do not have to be repaid.</item>
         <item>The HKUST Admissions Scholarships are merit-based financial awards provided by the Hong Kong University of Science and Technology to outstanding local and international undergraduate applicants.</item>
     </string-array>
+    <integer-array name="data_photo">
+        <item>@drawable/ic_scholarship_sg</item>
+        <item>@drawable/ic_scholarship_ubc</item>
+        <item>@drawable/ic_scholarship_um</item>
+        <item>@drawable/ic_scholarship_saudi</item>
+        <item>@drawable/ic_scholarship_id</item>
+        <item>@drawable/ic_scholarship_us</item>
+        <item>@drawable/ic_scholarship_hk</item>
+    </integer-array>
 
 </resources>
