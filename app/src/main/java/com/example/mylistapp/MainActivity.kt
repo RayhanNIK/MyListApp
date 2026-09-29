@@ -18,7 +18,19 @@ class MainActivity : AppCompatActivity() {
         rvScholarship = findViewById(R.id.rvListScholarship)
         rvScholarship.setHasFixedSize(true)
 
+        list.addAll(getListScholarship())
         showRecyclerList()
+    }
+
+    private fun getListScholarship(): ArrayList<Scholarship> {
+        val dataName = resources.getStringArray(R.array.data_name)
+        val dataDescription = resources.getStringArray(R.array.data_description)
+        val listScholarship = ArrayList<Scholarship>()
+        for (i in dataName.indices) {
+            val scholarship = Scholarship(dataName[i], dataDescription[i], dataDescription[i])
+            listScholarship.add(scholarship)
+        }
+        return listScholarship
     }
 
     private fun showRecyclerList() {
