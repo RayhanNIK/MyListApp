@@ -23,7 +23,7 @@ class ListScholarshipAdapter(private val listScholarship: ArrayList<Scholarship>
         position: Int
     ) {
         val (name, description, photo) = listScholarship[position]
-        //holder.ivScholarshipPhoto.setImageResource(photo)
+        holder.ivScholarshipPhoto.setImageResource(photo)
         holder.tvScholarshipName.text = name
         holder.tvScholarshipDescription.text = description
     }

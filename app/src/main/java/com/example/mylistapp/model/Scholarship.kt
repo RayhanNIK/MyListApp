@@ -8,5 +8,5 @@ import kotlinx.parcelize.Parcelize
 data class Scholarship(
     val name: String,
     val description: String,
-    val onlinePhoto: String
+    val photo: Int
 ) : Parcelable

@@ -25,9 +25,10 @@ class MainActivity : AppCompatActivity() {
     private fun getListScholarship(): ArrayList<Scholarship> {
         val dataName = resources.getStringArray(R.array.data_name)
         val dataDescription = resources.getStringArray(R.array.data_description)
+        val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
         val listScholarship = ArrayList<Scholarship>()
         for (i in dataName.indices) {
-            val scholarship = Scholarship(dataName[i], dataDescription[i], dataDescription[i])
+            val scholarship = Scholarship(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
             listScholarship.add(scholarship)
         }
         return listScholarship
