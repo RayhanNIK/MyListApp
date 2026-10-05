@@ -8,13 +8,18 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mylistapp.model.Scholarship
 
-class ListScholarshipAdapter(private val listScholarship: ArrayList<Scholarship>) :
-    RecyclerView.Adapter<ListScholarshipAdapter.ListScholarshipViewHolder>() {
+class ListScholarshipAdapter(
+    private val listScholarship: ArrayList<Scholarship>
+) : RecyclerView.Adapter<ListScholarshipAdapter.ListScholarshipViewHolder>() {
+
+    private lateinit var onItemClickCallback: OnItemClickCallback
+        
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
     ): ListScholarshipViewHolder {
-        val view: View= LayoutInflater.from(parent.context).inflate(R.layout.list_item_scholarship, parent, false)
+        val view: View = LayoutInflater.from(parent.context)
+            .inflate(R.layout.list_item_scholarship, parent, false)
         return ListScholarshipViewHolder(view)
     }
 
@@ -33,7 +38,16 @@ class ListScholarshipAdapter(private val listScholarship: ArrayList<Scholarship>
     class ListScholarshipViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val ivScholarshipPhoto: ImageView = itemView.findViewById(R.id.ivScholarshipPhoto)
         val tvScholarshipName: TextView = itemView.findViewById(R.id.tvScholarshipName)
-        val tvScholarshipDescription: TextView = itemView.findViewById(R.id.tvScholarshipDescription)
+        val tvScholarshipDescription: TextView =
+            itemView.findViewById(R.id.tvScholarshipDescription)
+    }
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
+
+    interface OnItemClickCallback {
+        fun onItemClicked(data: Scholarship)
     }
 
 }
