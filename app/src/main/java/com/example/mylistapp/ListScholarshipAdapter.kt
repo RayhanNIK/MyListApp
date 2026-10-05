@@ -13,7 +13,7 @@ class ListScholarshipAdapter(
 ) : RecyclerView.Adapter<ListScholarshipAdapter.ListScholarshipViewHolder>() {
 
     private lateinit var onItemClickCallback: OnItemClickCallback
-        
+
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -31,6 +31,10 @@ class ListScholarshipAdapter(
         holder.ivScholarshipPhoto.setImageResource(photo)
         holder.tvScholarshipName.text = name
         holder.tvScholarshipDescription.text = description
+
+        holder.itemView.setOnClickListener {
+            onItemClickCallback.onItemClicked(listScholarship[position])
+        }
     }
 
     override fun getItemCount(): Int = listScholarship.size
