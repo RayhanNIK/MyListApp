@@ -19,7 +19,7 @@
         <item>Study in Saudi is a fully funded government program administered by the Saudi Ministry of Education to attract top international talent to public universities across the Kingdom</item>
         <item>Beasiswa Garuda (specifically Beasiswa Garuda Sarjana) is a prestigious, fully funded undergraduate scholarship program created through a collaboration between the Ministry of Higher Education, Science, and Technology (Kemdiktisaintek) and the Education Fund Management Institution (LPDP).</item>
         <item>USC awards scholarships to help undergraduate students pay for their education. These funds come from a variety of university, federal, state and private sources. Unlike loans, however, they do not have to be repaid.</item>
-        <item>The HKUST Admissions Scholarships are merit-based financial awards provided by the Hong Kong University of Science and Technology to outstanding local and international undergraduate applicants.</item>
+        <item>CUHK offers admission scholarships to both local and non-local new undergraduate students on the basis of their excellent academic or non-academic performance. There is no need for the students to apply for these scholarships. The University will identify qualified new students and inform the selected students of the scholarship offers.</item>
     </string-array>
     <integer-array name="data_photo">
         <item>@drawable/ic_scholarship_sg</item>
