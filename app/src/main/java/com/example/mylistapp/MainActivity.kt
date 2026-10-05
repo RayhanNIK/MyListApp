@@ -53,6 +53,8 @@ class MainActivity : AppCompatActivity() {
     private fun showSelectedScholarship(scholarship: Scholarship) {
         val scholarshipDetailIntent =
             Intent(this@MainActivity, DetailScholarshipActivity::class.java)
+        scholarshipDetailIntent.putExtra(DetailScholarshipActivity.EXTRA_NAME,scholarship.name)
+        scholarshipDetailIntent.putExtra(DetailScholarshipActivity.EXTRA_DESC, scholarship.description)
         startActivity(scholarshipDetailIntent)
     }
 
