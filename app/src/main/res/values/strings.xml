@@ -36,5 +36,17 @@
         <item>@drawable/ic_scholarship_sk</item>
         <item>@drawable/ic_scholarship_jp</item>
     </integer-array>
+    <string-array name="data_website">
+        <item>https://nus.edu.sg/oam/scholarships/scholarships-for-freshmen-singapore-permanent-residents/asean-undergraduate-scholarship</item>
+        <item>https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars/</item>
+        <item>https://admu-intl.unist.ac.kr/admission-eng/life/scholarships.do</item>
+        <item>https://studyinsaudi.sa/en/Programs</item>
+        <item>https://beasiswagaruda.kemdiktisaintek.go.id</item>
+        <item>https://admission.usc.edu/cost-and-financial-aid/scholarships/</item>
+        <item>https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/</item>
+        <item>https://admu-intl.unist.ac.kr/admission-eng/life/scholarships.do</item>
+        <item>https://admissions.g30.nagoya-u.ac.jp/index.html@p=8335.html</item>
+    </string-array>
+
 
 </resources>
