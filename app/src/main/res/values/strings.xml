@@ -6,29 +6,35 @@
     <string-array name="data_name">
         <item>ASEAN Undergraduate Scholarship</item>
         <item>UBC Scholarship</item>
-        <item>UM NL Global Studies Scholarship</item>
+        <item>UNIST International Scholarship</item>
         <item>Study In Saudi</item>
         <item>Garuda Scholarship</item>
         <item>USC Scholarship</item>
-        <item>HKUST Scholarship</item>
+        <item>CUHK Scholarship</item>
+        <item>KAIST International Scholarship</item>
+        <item>Nagoya G30 Scholarship</item>
     </string-array>
     <string-array name="data_description">
         <item>The ASEAN Undergraduate Scholarship (AUS) is a merit-based financial award funded by Singaporean universities (such as NUS, NTU, SMU, and SIT) to support outstanding high school graduates from ASEAN member countries (excluding Singapore) pursuing full-time undergraduate degrees. </item>
         <item>The University of British Columbia (UBC) International Scholarships is a financial awards offered to incoming international students, broadly categorized into merit-based entrance awards and need-plus-merit awards</item>
-        <item>The UM NL High Potential Scholarship (formerly the UM Holland High Potential Scholarship) is a fully funded merit award offered by Maastricht University (UM) in collaboration with the Dutch Ministry of Education. It supports highly talented students from outside the EU/EEA pursuing select Master\'s degree programs at UM. </item>
+        <item>The UNIST International Student Scholarship is a merit-based financial award provided by the Ulsan National Institute of Science and Technology (UNIST)—one of South Koreas premier science and technology research universities. Like other top Korean STEM institutes, UNIST offers comprehensive scholarship support to almost all admitted international undergraduate students.</item>
         <item>Study in Saudi is a fully funded government program administered by the Saudi Ministry of Education to attract top international talent to public universities across the Kingdom</item>
         <item>Beasiswa Garuda (specifically Beasiswa Garuda Sarjana) is a prestigious, fully funded undergraduate scholarship program created through a collaboration between the Ministry of Higher Education, Science, and Technology (Kemdiktisaintek) and the Education Fund Management Institution (LPDP).</item>
         <item>USC awards scholarships to help undergraduate students pay for their education. These funds come from a variety of university, federal, state and private sources. Unlike loans, however, they do not have to be repaid.</item>
         <item>CUHK offers admission scholarships to both local and non-local new undergraduate students on the basis of their excellent academic or non-academic performance. There is no need for the students to apply for these scholarships. The University will identify qualified new students and inform the selected students of the scholarship offers.</item>
+        <item>The KAIST International Student Undergraduate Scholarship is a fully funded merit award offered by the Korea Advanced Institute of Science and Technology (KAIST)—one of Asias top STEM universities. Nearly all admitted international undergraduate students automatically receive this scholarship upon admission.</item>
+        <item>The Nagoya University Global 30 (G30) Undergraduate Scholarship is a merit- and need-based financial award for outstanding international students enrolling in English-taught undergraduate degree programs at Nagoya University, Japan.</item>
     </string-array>
     <integer-array name="data_photo">
         <item>@drawable/ic_scholarship_sg</item>
         <item>@drawable/ic_scholarship_ubc</item>
-        <item>@drawable/ic_scholarship_um</item>
+        <item>@drawable/ic_scholarship_sk2</item>
         <item>@drawable/ic_scholarship_saudi</item>
         <item>@drawable/ic_scholarship_id</item>
         <item>@drawable/ic_scholarship_us</item>
         <item>@drawable/ic_scholarship_hk</item>
+        <item>@drawable/ic_scholarship_sk</item>
+        <item>@drawable/ic_scholarship_jp</item>
     </integer-array>
 
 </resources>
