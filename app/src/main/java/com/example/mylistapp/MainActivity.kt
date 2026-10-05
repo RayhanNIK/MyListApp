@@ -1,5 +1,6 @@
 package com.example.mylistapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -28,7 +29,8 @@ class MainActivity : AppCompatActivity() {
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
         val listScholarship = ArrayList<Scholarship>()
         for (i in dataName.indices) {
-            val scholarship = Scholarship(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
+            val scholarship =
+                Scholarship(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
             listScholarship.add(scholarship)
         }
         return listScholarship
@@ -38,5 +40,20 @@ class MainActivity : AppCompatActivity() {
         rvScholarship.layoutManager = LinearLayoutManager(this)
         val listScholarshipAdapter = ListScholarshipAdapter(list)
         rvScholarship.adapter = listScholarshipAdapter
+
+        listScholarshipAdapter.setOnItemClickCallback(
+            object : ListScholarshipAdapter.OnItemClickCallback {
+                override fun onItemClicked(data: Scholarship) {
+                    showSelectedScholarship(data)
+                }
+            }
+        )
     }
+
+    private fun showSelectedScholarship(scholarship: Scholarship) {
+        val scholarshipDetailIntent =
+            Intent(this@MainActivity, DetailScholarshipActivity::class.java)
+        startActivity(scholarshipDetailIntent)
+    }
+
 }
