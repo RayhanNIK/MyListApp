@@ -11,6 +11,7 @@ class DetailScholarshipActivity : AppCompatActivity() {
         const val EXTRA_NAME = "scholarship_name"
         const val EXTRA_DESC = "scholarship_description"
         const val EXTRA_PHOTO = "scholarship_photo"
+        const val EXTRA_WEBSITE = "scholarship_website"
     }
 
     private lateinit var binding: ActivityDetailScholarshipBinding
@@ -26,6 +27,6 @@ class DetailScholarshipActivity : AppCompatActivity() {
     private fun displayScholarshipDetail() {
         binding.tvScholarshipDetailName.text = intent.getStringExtra(EXTRA_NAME)
         binding.tvScholarshipDetailDesc.text = intent.getStringExtra(EXTRA_DESC)
-        binding.ivScholarshipImage.setImageResource(intent.getIntExtra(EXTRA_PHOTO,0))
+        binding.ivScholarshipImage.setImageResource(intent.getIntExtra(EXTRA_PHOTO, 0))
     }
 }

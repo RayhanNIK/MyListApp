@@ -27,10 +27,12 @@ class MainActivity : AppCompatActivity() {
         val dataName = resources.getStringArray(R.array.data_name)
         val dataDescription = resources.getStringArray(R.array.data_description)
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
+        val dataWebsite = resources.getStringArray(R.array.data_website)
+
         val listScholarship = ArrayList<Scholarship>()
         for (i in dataName.indices) {
             val scholarship =
-                Scholarship(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
+                Scholarship(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1), dataWebsite[i])
             listScholarship.add(scholarship)
         }
         return listScholarship
@@ -56,6 +58,7 @@ class MainActivity : AppCompatActivity() {
         scholarshipDetailIntent.putExtra(DetailScholarshipActivity.EXTRA_NAME,scholarship.name)
         scholarshipDetailIntent.putExtra(DetailScholarshipActivity.EXTRA_DESC, scholarship.description)
         scholarshipDetailIntent.putExtra(DetailScholarshipActivity.EXTRA_PHOTO, scholarship.photo)
+        scholarshipDetailIntent.putExtra(DetailScholarshipActivity.EXTRA_WEBSITE, scholarship.website)
         startActivity(scholarshipDetailIntent)
     }
 
