@@ -24,6 +24,7 @@
         <item>CUHK offers admission scholarships to both local and non-local new undergraduate students on the basis of their excellent academic or non-academic performance. There is no need for the students to apply for these scholarships. The University will identify qualified new students and inform the selected students of the scholarship offers.</item>
         <item>The KAIST International Student Undergraduate Scholarship is a fully funded merit award offered by the Korea Advanced Institute of Science and Technology (KAIST)—one of Asias top STEM universities. Nearly all admitted international undergraduate students automatically receive this scholarship upon admission.</item>
         <item>The Nagoya University Global 30 (G30) Undergraduate Scholarship is a merit- and need-based financial award for outstanding international students enrolling in English-taught undergraduate degree programs at Nagoya University, Japan.</item>
+        <item>The King Fahd University of Petroleum and Minerals (KFUPM) SAT Track is a fully funded undergraduate admission and scholarship pathway for local and international students.</item>
     </string-array>
     <integer-array name="data_photo">
         <item>@drawable/ic_scholarship_sg</item>
@@ -35,6 +36,7 @@
         <item>@drawable/ic_scholarship_hk</item>
         <item>@drawable/ic_scholarship_sk</item>
         <item>@drawable/ic_scholarship_jp</item>
+        <item>@drawable/ic_scholarship_kfupm</item>
     </integer-array>
     <string-array name="data_website">
         <item>https://nus.edu.sg/oam/scholarships/scholarships-for-freshmen-singapore-permanent-residents/asean-undergraduate-scholarship</item>
