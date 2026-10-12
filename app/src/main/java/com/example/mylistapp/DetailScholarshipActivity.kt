@@ -1,8 +1,10 @@
 package com.example.mylistapp
 
 import android.R
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toUri
 import com.example.mylistapp.databinding.ActivityDetailScholarshipBinding
 
 class DetailScholarshipActivity : AppCompatActivity() {
@@ -15,6 +17,7 @@ class DetailScholarshipActivity : AppCompatActivity() {
     }
 
     private lateinit var binding: ActivityDetailScholarshipBinding
+    private lateinit var scholarshipWebsite: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,11 +25,16 @@ class DetailScholarshipActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         displayScholarshipDetail()
+        binding.btnScholarshipWebsite.setOnClickListener {
+            val openIntentWeb = Intent(Intent.ACTION_VIEW, scholarshipWebsite.toUri())
+            startActivity(openIntentWeb)
+        }
     }
 
     private fun displayScholarshipDetail() {
         binding.tvScholarshipDetailName.text = intent.getStringExtra(EXTRA_NAME)
         binding.tvScholarshipDetailDesc.text = intent.getStringExtra(EXTRA_DESC)
         binding.ivScholarshipImage.setImageResource(intent.getIntExtra(EXTRA_PHOTO, 0))
+        scholarshipWebsite = intent.getStringExtra(EXTRA_WEBSITE).toString()
     }
 }
