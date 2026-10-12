@@ -4,4 +4,7 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
+
+    <!-- Specific theme for Acvities that need an Action Bar -->
+    <style name="Theme.MyApplication.WithActionBar" parent="Theme.Material3.DayNight"></style>
 </resources>
