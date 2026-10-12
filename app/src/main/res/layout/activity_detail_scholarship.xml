@@ -54,6 +54,12 @@
                 android:layout_marginBottom="4dp"
                 android:text="@string/description" />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvScholarshipDetailDesc"
+                android:text="@string/scholarship_website" />
+
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>

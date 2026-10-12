@@ -3,6 +3,7 @@
 
     <string name="scholarship_name">Scholarship Name</string>
     <string name="description">Description</string>
+    <string name="scholarship_website">Scholarship Website</string>
     <string-array name="data_name">
         <item>ASEAN Undergraduate Scholarship</item>
         <item>UBC Scholarship</item>
