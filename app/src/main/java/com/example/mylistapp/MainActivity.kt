@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity() {
             Intent(this@MainActivity, DetailScholarshipActivity::class.java)
         scholarshipDetailIntent.putExtra(DetailScholarshipActivity.EXTRA_NAME,scholarship.name)
         scholarshipDetailIntent.putExtra(DetailScholarshipActivity.EXTRA_DESC, scholarship.description)
+        scholarshipDetailIntent.putExtra(DetailScholarshipActivity.EXTRA_PHOTO, scholarship.photo)
         startActivity(scholarshipDetailIntent)
     }
 
