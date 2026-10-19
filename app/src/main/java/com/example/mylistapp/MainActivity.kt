@@ -2,6 +2,7 @@ package com.example.mylistapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -21,6 +22,11 @@ class MainActivity : AppCompatActivity() {
 
         list.addAll(getListScholarship())
         showRecyclerList()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_scholarship,menu)
+        return super.onCreateOptionsMenu(menu)
     }
 
     private fun getListScholarship(): ArrayList<Scholarship> {
