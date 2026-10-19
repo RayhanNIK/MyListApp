@@ -5,9 +5,18 @@ import android.webkit.WebView
 import androidx.appcompat.app.AppCompatActivity
 
 class WebviewActivity : AppCompatActivity() {
+
+    companion object {
+        const val EXTRA_WEBSITE = "scholarship_website"
+    }
+
+    private lateinit var scholarshipWebsite: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_webview)
+
+        scholarshipWebsite = intent.getStringExtra(EXTRA_WEBSITE).toString()
 
         val webView = findViewById<WebView>(R.id.WebView)
         webView.settings.javaScriptEnabled = true
