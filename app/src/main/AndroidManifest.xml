@@ -12,12 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyListApp">
         <activity
+            android:name=".WebviewActivity"
+            android:exported="false" />
+        <activity
             android:name=".DetailScholarshipActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.MyApplication.WithActionBar"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.MyApplication.WithActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
