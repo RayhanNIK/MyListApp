@@ -27,6 +27,7 @@ class DetailScholarshipActivity : AppCompatActivity() {
         displayScholarshipDetail()
         binding.btnScholarshipWebsite.setOnClickListener {
             val openIntentWeb = Intent(this@DetailScholarshipActivity, WebviewActivity::class.java)
+            openIntentWeb.putExtra(WebviewActivity.EXTRA_WEBSITE, scholarshipWebsite)
             startActivity(openIntentWeb)
         }
     }
