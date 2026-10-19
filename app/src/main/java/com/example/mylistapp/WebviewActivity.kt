@@ -18,7 +18,7 @@ class WebviewActivity : AppCompatActivity() {
 
         scholarshipWebsite = intent.getStringExtra(EXTRA_WEBSITE).toString()
 
-        val webView = findViewById<WebView>(R.id.WebView)
+        val webView = findViewById<WebView>(R.id.webView)
         webView.settings.javaScriptEnabled = true
         webView.loadUrl("https://www.google.com")
     }
