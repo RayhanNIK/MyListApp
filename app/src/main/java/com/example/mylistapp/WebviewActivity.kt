@@ -10,6 +10,7 @@ class WebviewActivity : AppCompatActivity() {
         setContentView(R.layout.activity_webview)
 
         val webView = findViewById<WebView>(R.id.WebView)
+        webView.settings.javaScriptEnabled = true
         webView.loadUrl("https://www.google.com")
     }
 }
