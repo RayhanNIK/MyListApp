@@ -54,5 +54,6 @@
     <string name="List">Daftar</string>
     <string name="Grid">Grid</string>
     <string name="change_language">Ganti Bahasa</string>
+    <string name="open_web_in_browser">Buka Web di Browser</string>
 
 </resources>

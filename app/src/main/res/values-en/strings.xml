@@ -54,5 +54,6 @@
     <string name="List">List</string>
     <string name="Grid">Grid</string>
     <string name="change_language">Change Language</string>
+    <string name="open_web_in_browser">Open Web in Browser</string>
 
 </resources>
