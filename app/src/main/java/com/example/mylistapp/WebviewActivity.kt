@@ -1,8 +1,8 @@
 package com.example.mylistapp
 
 import android.os.Bundle
-import android.webkit.WebView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mylistapp.databinding.ActivityWebviewBinding
 
 class WebviewActivity : AppCompatActivity() {
 
@@ -12,14 +12,16 @@ class WebviewActivity : AppCompatActivity() {
 
     private lateinit var scholarshipWebsite: String
 
+    private lateinit var binding: ActivityWebviewBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_webview)
+        binding = ActivityWebviewBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         scholarshipWebsite = intent.getStringExtra(EXTRA_WEBSITE).toString()
 
-        val webView = findViewById<WebView>(R.id.webView)
-        webView.settings.javaScriptEnabled = true
-        webView.loadUrl(scholarshipWebsite)
+        binding.webView.settings.javaScriptEnabled = true
+        binding.webView.loadUrl(scholarshipWebsite)
     }
 }
