@@ -1,7 +1,9 @@
 package com.example.mylistapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toUri
 import com.example.mylistapp.databinding.ActivityWebviewBinding
 
 class WebviewActivity : AppCompatActivity() {
@@ -23,5 +25,10 @@ class WebviewActivity : AppCompatActivity() {
 
         binding.webView.settings.javaScriptEnabled = true
         binding.webView.loadUrl(scholarshipWebsite)
+
+        binding.btnScholarshipWebsite.setOnClickListener {
+            val browserIntent = Intent(Intent.ACTION_VIEW, scholarshipWebsite.toUri())
+            startActivity(browserIntent)
+        }
     }
 }
