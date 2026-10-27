@@ -2,6 +2,7 @@ package com.example.mylistapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.Settings
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -34,6 +35,10 @@ class MainActivity : AppCompatActivity() {
 
             R.id.action_grid -> {
                 rvScholarship.layoutManager = GridLayoutManager(this, 2)
+            }
+            R.id.action_language -> {
+                val settingsIntent = Intent(Settings.ACTION_LOCALE_SETTINGS)
+                startActivity(settingsIntent)
             }
         }
         return super.onOptionsItemSelected(item)
