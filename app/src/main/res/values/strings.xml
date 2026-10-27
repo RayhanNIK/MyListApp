@@ -53,5 +53,6 @@
     </string-array>
     <string name="List">Daftar</string>
     <string name="Grid">Grid</string>
+    <string name="change_language">Ganti Bahasa</string>
 
 </resources>
