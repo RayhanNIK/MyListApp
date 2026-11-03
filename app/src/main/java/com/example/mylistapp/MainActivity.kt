@@ -82,7 +82,8 @@ class MainActivity : AppCompatActivity() {
         if (!query.isNullOrBlank()) {
             val lowerCaseQuery = query.lowercase()
             for (item in list) {
-                if (item.name.lowercase().contains(lowerCaseQuery)) {
+                if (item.name.lowercase().contains(lowerCaseQuery)
+                    || item.description.lowercase().contains(lowerCaseQuery)) {
                     filteredList.add(item)
                 }
             }
