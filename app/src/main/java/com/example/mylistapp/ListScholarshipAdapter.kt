@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mylistapp.model.Scholarship
 
 class ListScholarshipAdapter(
-    private val listScholarship: ArrayList<Scholarship>
+    private var listScholarship: ArrayList<Scholarship>
 ) : RecyclerView.Adapter<ListScholarshipAdapter.ListScholarshipViewHolder>() {
 
     private lateinit var onItemClickCallback: OnItemClickCallback
@@ -48,6 +48,11 @@ class ListScholarshipAdapter(
 
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback
+    }
+
+    fun updateList(newList: List<Scholarship>) {
+        this.listScholarship = newList as ArrayList<Scholarship>
+        notifyDataSetChanged()
     }
 
     interface OnItemClickCallback {

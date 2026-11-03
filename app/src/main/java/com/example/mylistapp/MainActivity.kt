@@ -62,18 +62,39 @@ class MainActivity : AppCompatActivity() {
 
         searchView.setSearchableInfo(searchManager.getSearchableInfo(componentName))
         searchView.queryHint = resources.getString(R.string.search_hint)
-        searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener{
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 Toast.makeText(this@MainActivity, query, Toast.LENGTH_SHORT).show()
                 return true
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
+                filterScholarshipList(newText)
                 return true
             }
+
         })
 
     }
+
+    private fun filterScholarshipList(query: String?) {
+        val filteredList = ArrayList<Scholarship>()
+        if (!query.isNullOrBlank()) {
+            val lowerCaseQuery = query.lowercase()
+            for (item in list) {
+                if (item.name.lowercase().contains(lowerCaseQuery)) {
+                    filteredList.add(item)
+                }
+            }
+        } else {
+            // If query is empty, show the original full list
+            filteredList.addAll(list)
+        }
+
+        val adapter = rvScholarship.adapter as ListScholarshipAdapter
+        adapter.updateList(filteredList)
+    }
+
 
     private fun getListScholarship(): ArrayList<Scholarship> {
         val dataName = resources.getStringArray(R.array.data_name)
