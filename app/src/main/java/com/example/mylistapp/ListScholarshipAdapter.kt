@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.mylistapp.model.Scholarship
 
 class ListScholarshipAdapter(
@@ -28,9 +29,13 @@ class ListScholarshipAdapter(
         position: Int
     ) {
         val (name, description, photo) = listScholarship[position]
-        holder.ivScholarshipPhoto.setImageResource(photo)
+        //holder.ivScholarshipPhoto.setImageResource(photo)
         holder.tvScholarshipName.text = name
         holder.tvScholarshipDescription.text = description
+
+        Glide.with(holder.itemView.context)
+            .load(photo)
+            .into(holder.ivScholarshipPhoto)
 
         holder.itemView.setOnClickListener {
             onItemClickCallback.onItemClicked(listScholarship[position])

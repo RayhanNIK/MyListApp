@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.net.toUri
+import com.bumptech.glide.Glide
 import com.example.mylistapp.databinding.ActivityDetailScholarshipBinding
 
 class DetailScholarshipActivity : AppCompatActivity() {
@@ -35,7 +36,13 @@ class DetailScholarshipActivity : AppCompatActivity() {
     private fun displayScholarshipDetail() {
         binding.tvScholarshipDetailName.text = intent.getStringExtra(EXTRA_NAME)
         binding.tvScholarshipDetailDesc.text = intent.getStringExtra(EXTRA_DESC)
-        binding.ivScholarshipImage.setImageResource(intent.getIntExtra(EXTRA_PHOTO, 0))
+        //binding.ivScholarshipImage.setImageResource(intent.getIntExtra(EXTRA_PHOTO, 0))
+
+        val imageUrl = intent.getIntExtra(EXTRA_PHOTO, 0)
+        Glide.with(this)
+            .load(imageUrl)
+            .into(binding.ivScholarshipImage)
+
         scholarshipWebsite = intent.getStringExtra(EXTRA_WEBSITE).toString()
     }
 }
