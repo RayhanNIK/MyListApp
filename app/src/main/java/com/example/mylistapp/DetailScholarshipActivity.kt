@@ -41,6 +41,7 @@ class DetailScholarshipActivity : AppCompatActivity() {
         val imageUrl = intent.getIntExtra(EXTRA_PHOTO, 0)
         Glide.with(this)
             .load(imageUrl)
+            .circleCrop()
             .into(binding.ivScholarshipImage)
 
         scholarshipWebsite = intent.getStringExtra(EXTRA_WEBSITE).toString()

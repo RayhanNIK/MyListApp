@@ -35,6 +35,7 @@ class ListScholarshipAdapter(
 
         Glide.with(holder.itemView.context)
             .load(photo)
+            .circleCrop()
             .into(holder.ivScholarshipPhoto)
 
         holder.itemView.setOnClickListener {
