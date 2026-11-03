@@ -10,9 +10,15 @@
         android:title="@string/Grid"
         app:showAsAction="never" />
     <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="Cari"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="collapseActionView|always" />
+    <item
         android:id="@+id/action_language"
-        android:title="@string/change_language"
         android:icon="@drawable/ic_globe"
-        app:showAsAction="always" />
+        android:title="@string/change_language"
+        app:showAsAction="ifRoom" />
 
 </menu>
