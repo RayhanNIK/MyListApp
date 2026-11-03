@@ -1,11 +1,14 @@
 package com.example.mylistapp
 
+import android.app.SearchManager
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -46,7 +49,19 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_scholarship, menu)
+        setupSearchView(menu)
+
         return super.onCreateOptionsMenu(menu)
+    }
+
+    private fun setupSearchView(menu: Menu?) {
+        val searchManager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
+        val searchItem = menu?.findItem(R.id.action_search)
+        val searchView = searchItem?.actionView as SearchView
+
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(componentName))
+        searchView.queryHint = resources.getString(R.string.search_hint)
+        searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener)
     }
 
     private fun getListScholarship(): ArrayList<Scholarship> {
