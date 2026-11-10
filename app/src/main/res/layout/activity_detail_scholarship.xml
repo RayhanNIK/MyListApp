@@ -34,7 +34,7 @@
                 android:layout_below="@+id/tvScholarshipDetailName"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
-                android:background="?attr/colorPrimary" />
+                android:background="?attr/colorSecondary" />
 
             <ImageView
                 android:id="@+id/ivScholarshipImage"
