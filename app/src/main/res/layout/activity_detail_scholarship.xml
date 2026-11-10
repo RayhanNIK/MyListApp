@@ -43,7 +43,7 @@
                 android:layout_below="@+id/viewScholarshipDetailSeparator"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
-                tools:src="@drawable/ic_launcher_foreground" />
+                tools:src="@drawable/ic_android" />
 
             <TextView
                 android:id="@+id/tvScholarshipDetailDesc"
