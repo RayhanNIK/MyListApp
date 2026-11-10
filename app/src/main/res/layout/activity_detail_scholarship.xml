@@ -34,7 +34,7 @@
                 android:layout_below="@+id/tvScholarshipDetailName"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
-                android:background="@color/cardview_light_background" />
+                android:background="?attr/colorPrimary" />
 
             <ImageView
                 android:id="@+id/ivScholarshipImage"
@@ -60,7 +60,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvScholarshipDetailDesc"
-                android:text="@string/scholarship_website" />
+                android:text="@string/scholarship_website"
+                android:textColor="?attr/colorOnPrimary" />
 
         </RelativeLayout>
 
