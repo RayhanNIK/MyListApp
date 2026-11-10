@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.net.toUri
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.example.mylistapp.databinding.ActivityDetailScholarshipBinding
 
 class DetailScholarshipActivity : AppCompatActivity() {
@@ -41,7 +42,7 @@ class DetailScholarshipActivity : AppCompatActivity() {
         val imageUrl = intent.getIntExtra(EXTRA_PHOTO, 0)
         Glide.with(this)
             .load(imageUrl)
-            .circleCrop()
+            .transform(RoundedCorners(16))
             .into(binding.ivScholarshipImage)
 
         scholarshipWebsite = intent.getStringExtra(EXTRA_WEBSITE).toString()
